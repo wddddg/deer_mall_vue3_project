@@ -1,0 +1,578 @@
+[{
+    "code": "MAMA_PERMISSION_MODULE_PERMISSION",
+    "name": "权限",
+    "groups": [{
+      "code": "MAMA_PERMISSION_MODULE_PERMISSION_GROUP_PERMISSION",
+      "name": "权限管理",
+      "subGroups": [{
+          "code": "MAMA_PERMISSION_MODULE_PERMISSION_GROUP_PERMISSION_SUB_ROLE",
+          "name": "角色管理",
+          "permissions": [{
+              "code": "ROLE_PERMISSION_GET",
+              "name": "查看角色权限"
+            },
+            {
+              "code": "ROLE_CREATE",
+              "name": "新增角色"
+            },
+            {
+              "code": "ROLE_GET",
+              "name": "查看/搜索"
+            },
+            {
+              "code": "ROLE_UPDATE",
+              "name": "编辑角色"
+            },
+            {
+              "code": "ROLE_DELETE",
+              "name": "删除角色"
+            }
+          ]
+        },
+        {
+          "code": "MAMA_PERMISSION_MODULE_PERMISSION_GROUP_PERMISSION_SUB_ACCOUNT",
+          "name": "账号管理",
+          "permissions": [{
+              "code": "ACCOUNT_UPDATE",
+              "name": "编辑帐号资料"
+            },
+            {
+              "code": "ACCOUNT_PASSWORD_UPDATE",
+              "name": "修改密码"
+            },
+            {
+              "code": "ACCOUNT_DELETE",
+              "name": "删除帐号资料"
+            },
+            {
+              "code": "ACCOUNT_GET",
+              "name": "查看/搜索"
+            },
+            {
+              "code": "ACCOUNT_CREATE",
+              "name": "新增帐号资料"
+            },
+            {
+              "code": "ACCOUNT_ENABLED",
+              "name": "启用/禁用帐号"
+            }
+          ]
+        }
+      ]
+    }]
+  },
+  {
+    "code": "MAMA_PERMISSION_MODULE_WORKBENCH",
+    "name": "工作台",
+    "groups": [{
+      "code": "MAMA_PERMISSION_MODULE_WORKBENCH_GROUP_WORKBENCH",
+      "name": "工作台",
+      "subGroups": [{
+        "code": "MAMA_PERMISSION_MODULE_WORKBENCH_GROUP_WORKBENCH_SUB_WORKBENCH",
+        "name": "工作台",
+        "permissions": [{
+          "code": "WORKBENCH_GET",
+          "name": "查看"
+        }]
+      }]
+    }]
+  },
+  {
+    "code": "MAMA_PERMISSION_MODULE_CONFIG",
+    "name": "配置",
+    "groups": [{
+      "code": "MAMA_PERMISSION_MODULE_CONFIG_GROUP_CONFIG",
+      "name": "配置管理",
+      "subGroups": [{
+          "code": "MAMA_PERMISSION_MODULE_CONFIG_GROUP_CONFIG_SUB_EXPORT",
+          "name": "导出队列",
+          "permissions": [{
+              "code": "CONFIG_EXPORT_DELETE",
+              "name": "删除导出记录"
+            },
+            {
+              "code": "CONFIG_EXPORT_DOWNLOAD",
+              "name": "下载记录"
+            },
+            {
+              "code": "CONFIG_EXPORT_GET",
+              "name": "查看/搜索"
+            },
+            {
+              "code": "CONFIG_REEXPORT",
+              "name": "重新导出"
+            }
+          ]
+        },
+        {
+          "code": "MAMA_PERMISSION_MODULE_CONFIG_GROUP_CONFIG_SUB_AGREEMENT",
+          "name": "协议管理",
+          "permissions": [{
+              "code": "CONFIG_AGREEMENT_VERSION_RECORD_GET",
+              "name": "查看版本记录"
+            },
+            {
+              "code": "CONFIG_AGREEMENT_GET",
+              "name": "查看/搜索"
+            },
+            {
+              "code": "CONFIG_AGREEMENT_UPDATE",
+              "name": "编辑协议"
+            }
+          ]
+        },
+        {
+          "code": "MAMA_PERMISSION_MODULE_CONFIG_GROUP_CONFIG_SUB_CONFIG",
+          "name": "基础配置",
+          "permissions": [{
+              "code": "CONFIG_GET",
+              "name": "查看/搜索"
+            },
+            {
+              "code": "CONFIG_UPDATE",
+              "name": "设置基础配置"
+            }
+          ]
+        }
+      ]
+    }]
+  },
+  {
+    "code": "MAMA_PERMISSION_MODULE_PRODUCT",
+    "name": "商品",
+    "groups": [{
+      "code": "MAMA_PERMISSION_MODULE_PRODUCT_GROUP_PRODUCT",
+      "name": "商品管理",
+      "subGroups": [{
+          "code": "MAMA_PERMISSION_MODULE_PRODUCT_GROUP_PRODUCT_SUB_CATEGORY",
+          "name": "商品分类",
+          "permissions": [{
+              "code": "PRODUCT_CATEGORY_GET",
+              "name": "查看/搜索"
+            },
+            {
+              "code": "PRODUCT_CATEGORY_ATTRIBUTE_UPDATE",
+              "name": "编辑属性"
+            },
+            {
+              "code": "PRODUCT_CATEGORY_CREATE",
+              "name": "新增一级/二级分类"
+            },
+            {
+              "code": "PRODUCT_CATEGORY_DELETE",
+              "name": "删除一级/二级分类"
+            },
+            {
+              "code": "PRODUCT_CATEGORY_UPDATE",
+              "name": "修改一级/二级分类"
+            }
+          ]
+        },
+        {
+          "code": "MAMA_PERMISSION_MODULE_PRODUCT_GROUP_PRODUCT_SUB_ATTRIBUTE_CONFIG",
+          "name": "商品属性",
+          "permissions": [{
+              "code": "PRODUCT_ATTRIBUTE_CONFIG_CREATE",
+              "name": "新增属性"
+            },
+            {
+              "code": "PRODUCT_ATTRIBUTE_CONFIG_GET",
+              "name": "查看/搜索"
+            },
+            {
+              "code": "PRODUCT_ATTRIBUTE_CONFIG_DELETE",
+              "name": "删除属性"
+            },
+            {
+              "code": "PRODUCT_ATTRIBUTE_CONFIG_UPDATE",
+              "name": "修改属性"
+            }
+          ]
+        },
+        {
+          "code": "MAMA_PERMISSION_MODULE_PRODUCT_GROUP_PRODUCT_SUB_PRODUCT",
+          "name": "商品列表",
+          "permissions": [{
+              "code": "PRODUCT_DETAIL_GET",
+              "name": "查看详情资料"
+            },
+            {
+              "code": "PRODUCT_GET",
+              "name": "查看/搜索"
+            }
+          ]
+        }
+      ]
+    }]
+  },
+  {
+    "code": "MAMA_PERMISSION_MODULE_BUYER",
+    "name": "消费者",
+    "groups": [{
+      "code": "MAMA_PERMISSION_MODULE_BUYER_GROUP_BUYER",
+      "name": "消费者管理",
+      "subGroups": [{
+          "code": "MAMA_PERMISSION_MODULE_BUYER_GROUP_BUYER_SUB_BUYER",
+          "name": "消费者等级",
+          "permissions": [{
+              "code": "BUYER_LEVEL_CREATE",
+              "name": "新增等级"
+            },
+            {
+              "code": "BUYER_LEVEL_UPDATE",
+              "name": "修改等级"
+            },
+            {
+              "code": "BUYER_LEVEL_GET",
+              "name": "查看/搜索"
+            },
+            {
+              "code": "BUYER_LEVEL_DELETE",
+              "name": "删除等级"
+            }
+          ]
+        },
+        {
+          "code": "MAMA_PERMISSION_MODULE_BUYER_GROUP_BUYER_SUB_ACCOUNT",
+          "name": "消费者列表",
+          "permissions": [{
+              "code": "BUYER_UPDATE_TEST",
+              "name": "设为测试人员"
+            },
+            {
+              "code": "BUYER_DETAIL_GET",
+              "name": "查看详情资料"
+            },
+            {
+              "code": "BUYER_GET",
+              "name": "查看/搜索"
+            }
+          ]
+        }
+      ]
+    }]
+  },
+  {
+    "code": "MAMA_PERMISSION_MODULE_SETTLEMENT",
+    "name": "结算",
+    "groups": [{
+        "code": "MAMA_PERMISSION_MODULE_SETTLEMENT_GROUP_SETTLEMENT",
+        "name": "结算",
+        "subGroups": [{
+          "code": "MAMA_PERMISSION_MODULE_SETTLEMENT_GROUP_SETTLEMENT_SUB_SETTLEMENT",
+          "name": "结算汇总",
+          "permissions": [{
+              "code": "BILL_DETAIL_GET",
+              "name": "查看汇总明细"
+            },
+            {
+              "code": "BILL_GET",
+              "name": "查看/搜索"
+            }
+          ]
+        }]
+      },
+      {
+        "code": "MAMA_PERMISSION_MODULE_SETTLEMENT_GROUP_TRADE_PROFIT_SHARING",
+        "name": "分账",
+        "subGroups": [{
+          "code": "MAMA_PERMISSION_MODULE_SETTLEMENT_GROUP_TRADE_PROFIT_SHARING_SUB_TRADE_PROFIT_SHARING",
+          "name": "分账列表",
+          "permissions": [{
+              "code": "TRADE_PROFIT_GET",
+              "name": "查看/搜索"
+            },
+            {
+              "code": "TRADE_PROFIT_EXPORT_REPORT",
+              "name": "导出报表"
+            }
+          ]
+        }]
+      }
+    ]
+  },
+  {
+    "code": "MAMA_PERMISSION_MODULE_TRADE",
+    "name": "订单",
+    "groups": [{
+        "code": "MAMA_PERMISSION_MODULE_TRADE_GROUP_TRANSACTION",
+        "name": "交易管理",
+        "subGroups": [{
+            "code": "MAMA_PERMISSION_MODULE_TRADE_GROUP_TRANSACTION_SUB_REFUND",
+            "name": "退款流水列表",
+            "permissions": [{
+                "code": "REFUND_DETAIL_GET",
+                "name": "查看详情资料"
+              },
+              {
+                "code": "REFUND_GET",
+                "name": "查看/搜索"
+              }
+            ]
+          },
+          {
+            "code": "MAMA_PERMISSION_MODULE_TRADE_GROUP_TRANSACTION_SUB_TRANSACTION",
+            "name": "交易流水列表",
+            "permissions": [{
+                "code": "TRANSACTION_DETAIL_GET",
+                "name": "查看详情资料"
+              },
+              {
+                "code": "TRANSACTION_RELATIONAL_RECORD_GET",
+                "name": "查看关联记录"
+              },
+              {
+                "code": "TRANSACTION_GET",
+                "name": "查看/搜索"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "MAMA_PERMISSION_MODULE_TRADE_GROUP_TRADE",
+        "name": "订单管理",
+        "subGroups": [{
+            "code": "MAMA_PERMISSION_MODULE_TRADE_GROUP_TRADE_SUB_EVALUATION",
+            "name": "评价列表",
+            "permissions": [{
+                "code": "EVALUATION_GET",
+                "name": "查看/搜索"
+              },
+              {
+                "code": "EVALUATION_DETAIL_GET",
+                "name": "查看详情资料"
+              }
+            ]
+          },
+          {
+            "code": "MAMA_PERMISSION_MODULE_TRADE_GROUP_TRADE_SUB_TRADE",
+            "name": "订单列表",
+            "permissions": [{
+                "code": "TRADE_DETAIL_GET",
+                "name": "查看详情资料"
+              },
+              {
+                "code": "TRADE_GET",
+                "name": "查看/搜索"
+              }
+            ]
+          },
+          {
+            "code": "MAMA_PERMISSION_MODULE_TRADE_GROUP_TRADE_SUB_AFTER_SALE",
+            "name": "售后列表",
+            "permissions": [{
+                "code": "AFTER_SALE_GET",
+                "name": "查看/搜索"
+              },
+              {
+                "code": "AFTER_SALE_DETAIL_GET",
+                "name": "查看详情资料"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "MAMA_PERMISSION_MODULE_FEEDBACK",
+    "name": "反馈",
+    "groups": [{
+      "code": "MAMA_PERMISSION_MODULE_FEEDBACK_GROUP_FEEDBACK",
+      "name": "意见反馈",
+      "subGroups": [{
+          "code": "MAMA_PERMISSION_MODULE_FEEDBACK_GROUP_FEEDBACK_SUB_BUYER",
+          "name": "消费者反馈",
+          "permissions": [{
+              "code": "BUYER_FEEDBACK_UPDATE",
+              "name": "处理反馈"
+            },
+            {
+              "code": "BUYER_FEEDBACK_DELETE",
+              "name": "删除反馈"
+            },
+            {
+              "code": "BUYER_FEEDBACK_GET",
+              "name": "查看/搜索"
+            }
+          ]
+        },
+        {
+          "code": "MAMA_PERMISSION_MODULE_FEEDBACK_GROUP_FEEDBACK_SUB_VENDOR",
+          "name": "商家反馈",
+          "permissions": [{
+              "code": "VENDOR_FEEDBACK_DELETE",
+              "name": "删除反馈"
+            },
+            {
+              "code": "VENDOR_FEEDBACK_GET",
+              "name": "查看/搜索"
+            },
+            {
+              "code": "VENDOR_FEEDBACK_UPDATE",
+              "name": "处理反馈"
+            }
+          ]
+        }
+      ]
+    }]
+  },
+  {
+    "code": "MAMA_PERMISSION_MODULE_CHAT",
+    "name": "会话",
+    "groups": [{
+        "code": "MAMA_PERMISSION_MODULE_CHAT_GROUP_CHAT",
+        "name": "会话管理",
+        "subGroups": [{
+          "code": "MAMA_PERMISSION_MODULE_CHAT_GROUP_CHAT_SUB_CHAT",
+          "name": "会话记录",
+          "permissions": [{
+            "code": "CHAT_GET",
+            "name": "查看/搜索"
+          }]
+        }]
+      },
+      {
+        "code": "MAMA_PERMISSION_MODULE_CHAT_MAMA_CHAT",
+        "name": "平台客服",
+        "subGroups": [{
+            "code": "MAMA_PERMISSION_MODULE_CHAT_GROUP_CHAT_SUB_MAMA_CHAT",
+            "name": "平台客服",
+            "permissions": [{
+              "code": "MAMA_CHAT",
+              "name": "平台客服"
+            }]
+          },
+          {
+            "code": "MAMA_PERMISSION_MODULE_CHAT_GROUP_CHAT_SUB_CHAT_RECORD",
+            "name": "聊天记录",
+            "permissions": [{
+              "code": "CHAT_RECORD_GET",
+              "name": "查看/搜索"
+            }]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "MAMA_PERMISSION_MODULE_VENDOR",
+    "name": "商家",
+    "groups": [{
+        "code": "MAMA_PERMISSION_MODULE_VENDOR_GROUP_SELLER",
+        "name": "销售员",
+        "subGroups": [{
+            "code": "MAMA_PERMISSION_MODULE_VENDOR_GROUP_SELLER_RANKING",
+            "name": "销售排名",
+            "permissions": [{
+              "code": "SELLER_RANKING_GET",
+              "name": "查看/搜索"
+            }]
+          },
+          {
+            "code": "MAMA_PERMISSION_MODULE_VENDOR_SUB_GROUP_SELLER",
+            "name": "销售员列表",
+            "permissions": [{
+                "code": "SELLER_GET",
+                "name": "查看/搜索"
+              },
+              {
+                "code": "SELLER_SALES",
+                "name": "销售情况"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "MAMA_PERMISSION_MODULE_VENDOR_GROUP_VENDOR",
+        "name": "商家管理",
+        "subGroups": [{
+            "code": "MAMA_PERMISSION_MODULE_VENDOR_GROUP_VENDOR_SUB_SHOP",
+            "name": "店铺列表",
+            "permissions": [{
+                "code": "SHOP_STATUS_UPDATE",
+                "name": "店铺状态变更设置"
+              },
+              {
+                "code": "SHOP_DETAIL_GET",
+                "name": "查看店铺资料"
+              },
+              {
+                "code": "SHOP_GET",
+                "name": "查看/搜索"
+              },
+              {
+                "code": "SHOP_MAMA_OPERATION_UPDATE",
+                "name": "设置运营方式"
+              },
+              {
+                "code": "SHOP_MAMA_UPDATE_TEST",
+                "name": "设为测试店铺"
+              }
+            ]
+          },
+          {
+            "code": "MAMA_PERMISSION_MODULE_VENDOR_GROUP_VENDOR_SUB_ORGANIZATION",
+            "name": "经营主体列表",
+            "permissions": [{
+                "code": "ORGANIZATION_GET",
+                "name": "查看/搜索"
+              },
+              {
+                "code": "ORGANIZATION_SHOP_GET",
+                "name": "查看关联店铺"
+              },
+              {
+                "code": "ORGANIZATION_ENABLED",
+                "name": "设置暂停/重启经营"
+              },
+              {
+                "code": "ORGANIZATION_REVIEW",
+                "name": "审核认证"
+              },
+              {
+                "code": "ORGANIZATION_REVIEW_RECORD_GET",
+                "name": "查看审核记录"
+              }
+            ]
+          },
+          {
+            "code": "MAMA_PERMISSION_MODULE_VENDOR_GROUP_VENDOR_SUB_ACCOUNT",
+            "name": "账号列表",
+            "permissions": [{
+                "code": "VENDOR_GET",
+                "name": "查看/搜索"
+              },
+              {
+                "code": "VENDOR_DETAIL_GET",
+                "name": "查看帐号资料"
+              }
+            ]
+          },
+          {
+            "code": "MAMA_PERMISSION_MODULE_VENDOR_GROUP_VENDOR_SUB_SHOP_APPLYMENT",
+            "name": "微信商户申请",
+            "permissions": [{
+                "code": "SHOP_APPLYMENT_RECORD_GET",
+                "name": "查看操作记录"
+              },
+              {
+                "code": "SHOP_APPLYMENT_SEND_SIGN_URL",
+                "name": "发送签约通知"
+              },
+              {
+                "code": "SHOP_APPLYMENT_SEND_LEGAL_PERSON_VERIFICATION_URL",
+                "name": "发送验证通知"
+              },
+              {
+                "code": "SHOP_APPLYMENT_GET",
+                "name": "查看/搜索"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

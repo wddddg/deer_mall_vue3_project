@@ -1,0 +1,533 @@
+.font-color-FF8200 {
+  color: #ff8200 !important;
+}
+
+.font-color-FF5050 {
+  color: #ff5050 !important;
+}
+
+.font-color-C02235 {
+  color: #c02235 !important;
+}
+
+.font-color-1A97E1 {
+  color: #1a97e1 !important;
+}
+
+.font-color-D1D3D7 {
+  color: #d1d3d7 !important;
+}
+
+.font-color-5AA700 {
+  color: #5aa700 !important;
+}
+
+.font-color-222222 {
+  color: #222 !important;
+}
+
+.font-color-999999 {
+  color: #999 !important;
+}
+
+// 左侧内容外框
+.page-container {
+  padding: 20px;
+  height: 100%;
+}
+
+// 页面顶部搜索栏
+.page-header-container {
+  padding: 0 0 20px;
+  // background-color: #fff;
+  background-color: none;
+  // border-radius: 5px;
+}
+
+.search-container {
+  width: 100%;
+  height: 35px;
+  // padding: 0 20px;
+
+  .search-btn-box {
+    min-width: 350px;
+
+    > * {
+      margin: 0 21px;
+    }
+  }
+
+  .search-item {
+    width: 180px;
+    margin-right: 15px;
+    // margin-top: 15px;
+
+    input {
+      height: 32px !important;
+    }
+
+    .ant-calendar-picker {
+      width: 100%;
+
+      .ant-calendar-picker {
+        display: block;
+
+        .ant-calendar-picker-input {
+          height: 32px;
+          line-height: 32px;
+          padding: 0 11px;
+        }
+      }
+    }
+
+    // 選擇框
+    .ant-select-selection--single {
+      height: 32px !important;
+    }
+
+    // 默認字體
+    .ant-select-selection__placeholder {
+      // top: 58%;
+      // left: 6px;
+      color: #b1b1b1 !important;
+    }
+
+    .ant-select-selection-selected-value {
+      line-height: 32px;
+    }
+  }
+}
+
+// 操作按钮
+.action-btn {
+  display: inline-block;
+  padding: 0 8px;
+  // width: 82px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  user-select: none !important;
+
+  &.red {
+    border: 1px solid #c02235;
+    background-color: #c02235;
+    color: #fff;
+
+    &:active {
+      border: 1px solid #b62133;
+      background-color: #b62133;
+    }
+  }
+
+  // 禁用
+  &.gray {
+    border: 1px solid #b8b8b8;
+    background-color: #b8b8b8;
+    color: #fff;
+    cursor: default;
+  }
+
+  &:active {
+    background: #ededed;
+    // -webkit-transition-duration: 0;
+    transition-duration: 0;
+    // -webkit-box-shadow: 0 0 0 2px #ededed, 0 0 0 4px #ededed;
+    box-shadow: 0 0 0 2px #ededed, 0 0 0 4px #ededed;
+  }
+}
+
+.action-text {
+  cursor: pointer;
+  color: #007bff !important;
+  // user-select: none !important;
+}
+
+.action-text-hover {
+  &:hover {
+    &:extend(.action-text);
+  }
+}
+
+.image-cover {
+  object-fit: cover !important;
+}
+
+// 页面分tab
+.tab-container {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  background-color: #fff;
+  overflow: hidden; // 圆角底色溢出，也会造成底线叠加失效
+  display: inline-flex;
+  user-select: none !important;
+
+  // 外层盒子分开两部分  让选中底线叠加
+  .tab-content-container {
+    border-bottom: 2px solid #e4e7ed;
+    width: 100%;
+
+    .tab-item {
+      width: 100px;
+      height: 48px;
+      line-height: 48px;
+      color: #4f4f4f;
+      text-align: center;
+      display: inline-block;
+      cursor: pointer;
+
+      // 被选中
+      &._active {
+        background-color: #fff !important;
+        color: #c02235;
+        font-weight: 700;
+        position: relative;
+        text-shadow: none !important;
+
+        // 底线叠加
+        &::after {
+          content: '';
+          width: 100%;
+          height: 2px;
+          background-color: #c02235;
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          z-index: 1000;
+        }
+      }
+    }
+  }
+
+  // 当存在分tab时 表格上圆角为0
+  & + .table-container {
+    border-radius: 0 0 5px 5px !important;
+  }
+}
+
+/********* flex布局 ******************/
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_center-top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flex_center_column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.flex_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex_between_column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+}
+
+.flex_between-baseline {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.flex_between-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.flex_start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex_start_column {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column;
+}
+
+.flex_start_top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex_start_wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex_around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex_end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex_end_top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.inline_start {
+  > div {
+    display: inline-block;
+  }
+}
+
+//------------------------------表情符------------------------------
+
+.oma {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  margin: 0 0.05em 0 0.1em;
+  vertical-align: -0.1em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1em 1em;
+}
+
+.oma-lg {
+  height: 1.33em;
+  width: 1.33em;
+  margin: 0 0.0665em 0 0.133em;
+  vertical-align: -0.15em;
+  background-size: 1.33em 1.33em;
+}
+
+.oma-bg {
+  height: 1.5em;
+  width: 1.5em;
+  margin: 0 0.075em 0 0.15em;
+  vertical-align: -0.2em;
+  background-size: 1.5em 1.5em;
+}
+
+.oma-2x {
+  height: 2em;
+  width: 2em;
+  margin: 0 0.1em 0 0.2em;
+  vertical-align: -0.7em;
+  background-size: 2em 2em;
+}
+
+.oma-3x {
+  height: 3em;
+  width: 3em;
+  margin: 0 0.15em 0 0.3em;
+  vertical-align: -1.1em;
+  background-size: 3em 3em;
+}
+
+.oma-4x {
+  height: 4em;
+  width: 4em;
+  margin: 0 0.2em 0 0.4em;
+  vertical-align: -1.5em;
+  background-size: 4em 4em;
+}
+
+.oma-5x {
+  height: 5em;
+  width: 5em;
+  margin: 0 0.25em 0 0.5em;
+  vertical-align: -1.6em;
+  background-size: 5em 5em;
+}
+
+.oma-6x {
+  height: 6em;
+  width: 6em;
+  margin: 0 0.3em 0 0.6em;
+  vertical-align: -1.6em;
+  background-size: 6em 6em;
+}
+
+//------------------------------滚动窗口------------------------------
+
+.scrollbar-item-y {
+  overflow-y: auto;
+
+  // 滾動條
+  &::-webkit-scrollbar {
+    // /*滚动条整体样式*/
+    width: 4px;
+    // /*高宽分别对应横竖滚动条的尺寸*/
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    // /*滚动条里面小方块*/
+    border-radius: 10px;
+    background-color: #bababa;
+  }
+
+  &::-webkit-scrollbar-track {
+    // /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px #f1f1f1;
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+}
+
+.scrollbar-item-x {
+  overflow-x: auto;
+
+  // 滾動條
+  &::-webkit-scrollbar {
+    // /*滚动条整体样式*/
+    width: 10px;
+    // /*高宽分别对应横竖滚动条的尺寸*/
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    // /*滚动条里面小方块*/
+    border-radius: 10px;
+    background-color: #bababa;
+  }
+
+  &::-webkit-scrollbar-track {
+    // /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px #f1f1f1;
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+}
+
+//------------------------------滚动窗口------------------------------
+
+.model-body {
+  width: 100%;
+  padding: 0;
+  background-color: #fff !important;
+
+  .ant-select-selection,
+  .ant-select-selection:focus {
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: none;
+  }
+
+  // input
+  .input-container {
+    margin-bottom: 15px;
+    line-height: 35px;
+
+    .title {
+      padding-right: 6px;
+      flex-shrink: 0; // flex 布局下 不会因为宽度不够而被压缩该元素宽度
+    }
+
+    input,
+    .ant-select-selection {
+      border: 1px solid #d9d9d9;
+      border-radius: 3px;
+      width: 100%;
+      height: 35px;
+      padding-left: 4px;
+
+      > .ant-select-selection__rendered {
+        height: 35px;
+      }
+
+      input {
+        border: none;
+        outline: none;
+        background: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .model-del-item {
+    padding: 10px 15px 20px;
+    color: #ff5050;
+  }
+}
+
+.model-footer {
+  width: 100%;
+  text-align: right;
+
+  &.border-top {
+    border: 1px solid rgba(#000, 0.06);
+  }
+
+  .btn-item-min {
+    padding: 0 8px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #fff;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .btn-item {
+    background-color: #fff;
+    padding: 0 8px;
+    min-width: 80px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .default-btn {
+    border: 1px solid #d9d9d9;
+    margin-right: 25px;
+    color: #000;
+
+    &:hover {
+      color: #000;
+      border: 1px solid #d9d9d9;
+    }
+  }
+
+  .ok-btn {
+    background: #c02235;
+    border: 1px solid #c02235;
+    color: #fff;
+
+    &:hover {
+      background: #c02235;
+      border: 1px solid #c02235;
+      color: #fff;
+    }
+  }
+}
